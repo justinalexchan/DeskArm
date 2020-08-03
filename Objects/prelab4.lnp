@@ -1,0 +1,9 @@
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\objects\uart.o"
+".\objects\startup_msp432e401y_uvision.o"
+".\objects\system_msp432e401y.o"
+--strict --scatter ".\Objects\prelab4.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\prelab4.map" -o .\Objects\prelab4.axf
